@@ -1,0 +1,5 @@
+name: "Reset workspace ownership action"
+description: "Reset workspace files and dirs ownership to avoid error when running further workflows"
+runs:
+  using: "docker"
+  image: "Dockerfile"
