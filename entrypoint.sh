@@ -8,4 +8,8 @@ echo "Updating ownership permissions on workspace directory to user $USER_UID"
 
 echo "Looking for files/directories not owned by '$USER_UID'"
 
+ls -la
+
 find . ! -user "$USER_UID" -exec chown -cvf "$USER_UID" "{}" \;
+
+ls -la
